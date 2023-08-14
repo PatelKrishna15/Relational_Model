@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aa322c53454393ed775cfe4807d54a50",
+    "content-hash": "2db8cded89a85530de88a15fb091f4f2",
     "packages": [
         {
             "name": "brick/math",
@@ -2111,6 +2111,43 @@
                 "source": "https://github.com/nette/utils/tree/v4.0.0"
             },
             "time": "2023-02-02T10:41:53+00:00"
+        },
+        {
+            "name": "nihirz/contact",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Nihirz/contact-package.git",
+                "reference": "1853148c6c26afd4e006c48f7affff956e3a7bcb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Nihirz/contact-package/zipball/1853148c6c26afd4e006c48f7affff956e3a7bcb",
+                "reference": "1853148c6c26afd4e006c48f7affff956e3a7bcb",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Nihir\\Contact\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nihir Zala",
+                    "email": "zalanihir8866@gmail.com"
+                }
+            ],
+            "description": "This will create the contact form submition for you for free you can use it in your system.",
+            "support": {
+                "issues": "https://github.com/Nihirz/contact-package/issues",
+                "source": "https://github.com/Nihirz/contact-package/tree/v1.0.0"
+            },
+            "time": "2023-08-08T09:49:56+00:00"
         },
         {
             "name": "nikic/php-parser",
