@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Database\Eloquent\Relations\HasOneThrough;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -13,10 +14,14 @@ return new class extends Migration
     {
         Schema::create('studs', function (Blueprint $table) {
             $table->id();
+            $table->string('stud_name');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
+            
         });
     }
-
+   
+    
     /**
      * Reverse the migrations.
      */

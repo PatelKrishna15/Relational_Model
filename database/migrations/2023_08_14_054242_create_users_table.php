@@ -11,9 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('onerelations', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
+        Schema::create('users', function (Blueprint $table) {
+            $table->id('user_id');
+            $table->string('user_name');
             $table->timestamps();
         });
     }
@@ -23,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('onerelations');
+        Schema::dropIfExists('users');
     }
 };
