@@ -17,6 +17,16 @@ return new class extends Migration
             $table->text('body');
             $table->timestamps();
         });
+        Schema::create('comments', function (Blueprint $table) {
+            $table->id();
+            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('post_id');
+            $table->text('comment');
+            $table->timestamps();
+   
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('post_id')->references('id')->on('posts');
+        });
     }
 
     /**
@@ -24,6 +34,7 @@ return new class extends Migration
      */
     public function down(): void
     {
+        Schema::dropIfExists('comments');
         Schema::dropIfExists('posts');
     }
 };

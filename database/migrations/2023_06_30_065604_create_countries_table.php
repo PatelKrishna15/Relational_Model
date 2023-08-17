@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('countries', function (Blueprint $table) {
             $table->id();
             $table->string('c_name');
-            $table->bigInteger('one_id');
+            $table->foreignId('one_id')->references('id')->on('Onerelation');
             $table->timestamps();
         });
     }
